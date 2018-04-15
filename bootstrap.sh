@@ -17,7 +17,7 @@ wget \
 
 # Fetch R 3.3.0 from singularity-hub.
 if ! [[ -f $img ]]; then
-    singularity pull --name $img shub://coregenomics/r-3.3.0-pmid-28904013
+    singularity pull --name $img shub://coregenomics/suppl-pmid-28904013
 fi
 
 R () {
