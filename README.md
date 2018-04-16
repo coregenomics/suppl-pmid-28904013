@@ -1,5 +1,3 @@
-[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/916)
-
 # Setup
 
 The original paper used R 3.3.0 on Debian 7 Wheezy, but because CRAN

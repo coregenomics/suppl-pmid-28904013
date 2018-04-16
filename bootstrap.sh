@@ -16,12 +16,14 @@ wget \
     https://genome.cshlp.org/content/suppl/2017/09/13/gr.226035.117.DC1/Supplemental_Code.zip
 
 # Fetch R 3.3.0 from singularity-hub.
-if ! [[ -f $img ]]; then
-    singularity pull --name $img shub://coregenomics/suppl-pmid-28904013
+if ! [[ -f $dir_downloads/$img ]]; then
+    cd downloads
+    singularity pull --name $img shub://coregenomics/r-3.3.0-debian-7
+    cd -
 fi
 
 R () {
-    ./$img --quiet --no-save --no-environ $@
+    $dir_downloads/$img --quiet --no-save --no-environ $@
 }
 
 # Download the GEO data.
